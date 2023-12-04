@@ -1,0 +1,262 @@
+p{
+    font-family: kanit; 
+    margin-top: 10px; 
+    margin-bottom:0px;
+}   
+.motto{ 
+    width:80%;  
+    margin-left:10%;  
+    margin-top: 3%;
+}
+.heading1, .heading2{
+    font-size: 35px;   
+    margin-top:50px; 
+    margin-left:40px; 
+    margin-bottom:0px;
+}  
+#everything{
+    transition: margin-left 0.2s;
+} 
+
+.push{
+    margin-left: 60px;
+}
+.line1, .line2{
+    width:95%; 
+    border: black, 0.5px; 
+}  
+
+.HSclothes{ 
+    height:700px;  
+    width:85%; 
+    transform: translate(7%, 0%); 
+    display:grid;  
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    margin-bottom: 90px;
+}    
+.bottom-cat{ 
+    display:flex; 
+    justify-content: space-around;   
+    padding-top:5%;
+    padding-left: 10%;  
+    padding-right: 15%;
+    background-color: rgb(164, 165, 198); 
+    height:230px;  
+    font-family: kanit; 
+    font-size:18px;
+}
+
+.image{ 
+    height:70%; 
+    width:100%;  
+    min-width: 50px;
+    cursor:pointer; 
+    z-index: 4;
+}  
+.line1{
+    margin-top:0px; 
+} 
+.heading2{
+    top:1100px;
+} 
+.line2{
+    top:1150px;
+} 
+.heading3, .heading4{ 
+    font-size: 28px;  
+}     
+.line3, .line4{ 
+    border-color:black;  
+    border-width: 0.5px;    
+    width:40%;
+}   
+.test{     
+    width:100%;
+    height:100%;
+    object-fit: cover; 
+} 
+.text{  
+    display:absolute;  
+    top:80px;
+    margin-left:5px;  
+    margin-top: 0px;
+    font-size: 17px; 
+    line-height:1em; 
+    z-index: 4; 
+    text-align: left;
+} 
+.clothingItem{
+    border:none;  
+    height:100%;
+    background-color: white; 
+    cursor:pointer; 
+    transition: background-color 0.2s;
+}
+.clothingItem:hover{ 
+    border:none;
+    background-color: rgba(0,0,0,0.1);
+} 
+.sub-heading{ 
+    display:absolute; 
+    bottom:100px;
+    background-color: black; 
+    height:400px; 
+} 
+.cat-headers{
+    display: flex;  
+    position:relative;
+    justify-content: space-between;   
+    height:35px; 
+    padding-left: 23%; 
+    padding-right:23%; 
+    margin-bottom:2px;
+}  
+.cat-lines{
+    display: flex; 
+    justify-content: space-between;   
+    margin-right:5%;
+    margin-left:5%; 
+    margin-top:2px;
+}  
+.sep{
+    position:absolute; 
+    left:0; 
+    right:0;  
+    top:-90px; 
+  
+} 
+.sub-cat{
+    height:700px;
+    display:flex; 
+    justify-content: space-between; 
+    margin-left: 140px; 
+    margin-right:140px;
+}  
+.sub-cat1, .sub-cat2{  
+    position:relative;
+    width:470px;  
+    display:grid; 
+    grid-template-columns: 1fr 1fr; 
+}  
+.sub-cat1{
+    margin-right: 80px; 
+} 
+.sub-cat2{
+    margin-left: 80px;
+}
+.see{  
+    font-family: kanit;
+    position:absolute;
+    bottom:2%; 
+    left:90%;
+    z-index: 7; 
+    white-space: nowrap;  
+    cursor: pointer;  
+    padding: 4px; 
+    border-radius: 8px; 
+    transition: background-color 0.1s;
+} 
+.see:hover{
+    background-color: rgba(0,0,0,0.05);
+} 
+.info-text{
+    position:relative; 
+    font-weight: bold;
+}  
+.info-smalltext{ 
+    cursor:pointer;
+    font-size: 13px;  
+    position:absolute;  
+    font-weight:100;
+    top:7%; 
+    left:20%; 
+    color:rgb(54, 53, 53);
+} 
+.info-imgs{  
+    width:300px;
+    margin-top:20px;
+    position:absolute; 
+    cursor:pointer;
+} 
+.sub-img{
+    width:100px; 
+}
+@media (max-width:930px){
+    .HSclothes{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }  
+    .cat-headers{
+        padding-left: 23%; 
+        padding-right:21%; 
+    } 
+    .sub-cat{
+        height:400px;
+    } 
+    .see{
+        bottom:-10%;
+    } 
+    .bottom-cat{
+        margin-top:100px;
+    }
+}  
+@media (max-width:870px){
+    .sub-cat{
+        height:200px; 
+    }  
+    .see{
+        bottom:-110%;
+    } 
+    .bottom-cat{
+        margin-top:300px;
+    }
+}
+
+@media (max-width:700px){
+    .HSclothes{
+        grid-template-columns: 1fr 1fr 1fr; 
+    } 
+    .heading2{
+        margin-top: 250px;
+    } 
+    .cat-headers{ 
+        margin-top: 200px;
+        padding-left: 21%; 
+        padding-right:18%; 
+    } 
+    .sub-cat2{
+        margin-left:10px;
+    }   
+    .sub-cat1{
+        margin-right:10px;
+    }  
+    .sub-cat{
+        margin-left:50px; 
+        margin-right:50px;
+    }
+    .sep{
+        top:-10px;
+    } 
+    .bottom-cat{
+        margin-top:500px;
+    } 
+    .see{
+        bottom:-120%
+    }         
+}  
+@media (max-width:580px){
+    .HSclothes{
+        grid-template-columns: 1fr 1fr; 
+    } 
+    .heading2{
+        margin-top: 700px;
+    } 
+    .cat-headers{ 
+        margin-top: 1000px;
+        padding-left: 20%; 
+        padding-right:18%; 
+    } 
+    .sub-cat{
+        justify-content: space-evenly; 
+        column-gap: 0px;
+    } 
+} 

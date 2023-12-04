@@ -1,0 +1,96 @@
+.header{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    position:fixed;   
+    align-items: center; 
+    background-color: white;
+    top:0; 
+    left:0; 
+    right:0; 
+    height: 80px;   
+    border: 0.5px solid black; 
+    border-left: 0px; 
+    border-right: 0px;
+    z-index: 9;  
+    box-shadow: 0 15px 15px rgba(0,0,0,0.05)
+}   
+.middle, .left, .right{ 
+    display:flex;
+    height:100%; 
+    align-items: center; 
+    justify-content: center; 
+    flex:1
+}     
+.middle{
+    margin-left: 20px;
+} 
+.logo{
+    height:100%; 
+} 
+.menu{
+    height:35%;
+}    
+.cart-button{
+    height:50px;
+    width:50px; 
+    margin-right:10px; 
+    background-color: white; 
+    border-radius: 5px; 
+    border-style: solid;  
+    border-width: thin;  
+    border-color: white;
+    transition:box-shadow 0.2s, border-width 0.2s, border-color 0.2s, background-color 0.1s;
+    position:absolute;
+    right:5px;
+    margin-left:10px; 
+    cursor:pointer;
+} 
+.cart-button:hover{ 
+    border: thin solid rgb(170, 170, 170);
+} 
+.cart-button:active{
+    background-color: rgba(0,0,0,0.1);
+}
+.shopping-bag{  
+    display:inline-block; 
+    height:60%; 
+} 
+.right-buttonspace{  
+    display:flex; 
+    height:100%;   
+    margin-right:20px; 
+    justify-content: space-between;  
+} 
+.bottom-button{     
+    background-color: white;  
+    border:0px solid;
+    border-radius: 3px; 
+    font-size: 8px; 
+    font-weight:bold;
+    display:flex;
+    margin-top:60px;
+    height:20px; 
+    margin-left: 0px; 
+    margin-right: 0px; 
+    min-width: 0px; 
+    vertical-align: middle; 
+    padding-top: 5px; 
+    transition:background-color 0.1s;  
+    cursor:pointer;
+}   
+.bottom-button:active{
+    background-color: rgba(0,0,0,0.1);
+}
+.menu-space{
+    height:100%;
+    position:absolute; 
+    left:5px; 
+    border:none; 
+    background-color: white; 
+    transition:background-color 0.1s; 
+    cursor:pointer;
+} 
+.menu-space:active{
+    background-color: rgba(0,0,0,0.1); 
+}
