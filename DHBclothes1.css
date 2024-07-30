@@ -1,0 +1,57 @@
+.cloth-bubble{ 
+    display:flex;
+    position:absolute; 
+    height:600px; 
+    width:1200px; 
+    background-color:rgb(235, 235, 235);  
+    right: 0;
+    left: 0;
+    top: 10%;
+    bottom: 0;
+    margin: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 15px 15px rgba(0,0,0,0.1);  
+    align-items: center; 
+    justify-content: space-evenly;
+} 
+.layer1,.layer2{
+    height:80%;
+    width:40%
+}  
+.clothing-1{
+    height:100%;
+}
+.layer2{ 
+    padding-left: 30px;
+    display:flex; 
+    flex-direction: column; 
+} 
+.pracTitle{ 
+    position:absolute; 
+    top:20%;
+    font: 40px kanit; 
+    text-align: left;
+} 
+.pracPrice{ 
+    position:absolute; 
+    top:40%; 
+    right:10%;
+    font: 30px kanit;  
+    text-align: left;
+} 
+
+.buy,.add2cart{ 
+    position:absolute;
+    height:70px; 
+    width:200px;
+}  
+.buy, .add2cart{   
+    border:0.5px solid gray; 
+    border-radius: 5px;
+    font: 20px kanit;  
+    top:60%; 
+    cursor: pointer;
+} 
+.add2cart{ 
+    right:8.5%
+}

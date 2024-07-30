@@ -1,0 +1,51 @@
+#sidebar{ 
+    background-color: rgb(249, 249, 249); 
+    position:fixed; 
+    display:flex;
+    width:60px; 
+    height:90%;  
+    bottom:0;
+    left:-10%;       
+    flex-direction: column;
+}     
+
+.sideimg{
+    height:60%;
+} 
+.sidebutton{  
+    background-color: transparent;
+    height:60px;  
+    border: 0px; 
+    cursor: pointer; 
+    transition: background-color 0.2s;
+} 
+.sidebutton:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+.slideout{   
+    animation-duration:0.2s; 
+    animation-name: slideout; 
+    animation-fill-mode: backwards;
+
+} 
+.slidein{  
+    animation-duration:0.2s; 
+    animation-name: slidein; 
+    animation-fill-mode: forwards;
+}
+@keyframes slidein{
+    from{
+        margin-left:0%;
+    } 
+    to{
+        margin-left:10%;
+    }
+} 
+@keyframes slideout{
+    from{
+        margin-left:10%; 
+    } 
+    to{
+        margin-left:-10%;
+    }
+}
